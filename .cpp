@@ -30,11 +30,10 @@ vector<string> findnumb(const string& input) {
 }
 
 int main() {
-    SetConsoleOutputCP(1251);
-    SetConsoleCP(1251);
-    string input = "Текст з числами (783), (093) і ще (2190), (abc), (41x90)";
+  
+    string input = "Text with numbers (783), (093), (2190), (abc), (41x90)";
     vector<string> numbers = findnumb(input);
-    cout << "Числа в дужках" << endl;
+    cout << "Numbers in parentheses" << endl;
     for (const string& number : numbers) {
         cout << number << endl;
     }
